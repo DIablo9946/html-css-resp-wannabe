@@ -69,7 +69,7 @@ img{
 
   /* Sito per l'utilizzo desktop */
 
-  @media screen and (min-width: 960px){
+  @media screen and (min-width: 1024px){
     #why .row::after {
       content: "";
       display: table;
@@ -101,3 +101,108 @@ img{
       margin-top: 0px;
     }
   }
+
+  /* Sito per l'utilizzo Ipod */
+
+  @media screen and (max-width: 1024px) {
+
+    #steps .row > .left,
+    #steps .row > .central {
+      width: 50%;
+      margin: 30px auto;
+      padding: 0px 10px;
+      float: left;
+    }
+
+    #steps .row > .right{
+      width: 100%;
+      margin: 30px auto;
+      padding: 0px 10px;
+    }
+
+    #lezioni .row > .left,
+    #lezioni .row > .right{
+      width: 50%;
+      margin: 30px auto;
+      float: left;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+  #lezioni .row {
+    margin-top: 0px;
+  }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    #why .row > .first,
+    #why .row > .second {
+      width: 50%;
+      float: left;
+    }
+
+    #why .row > .third  {
+      width: 100%;
+      padding-top: 100px;
+    }
+
+    hr {
+      display: none;
+    }
+
+  }
+
+
+
+  /* Sito per utilizzo cellulare */
+
+@media screen and (max-width: 480px) {
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+    width: 100%;
+    /* margin: 30px auto; */
+    /* padding: 0px 10px; */
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right{
+    width: 100%;
+    /* margin: 30px auto; */
+  }
+
+  .row {
+    width: 100%;
+  }
+
+#lezioni .row {
+  margin-top: 0px;
+}
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third  {
+    width: 100%;
+    margin-top: 80px;
+
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/* Chiedere come fare in maniera si che solo il testo diminuisca nella versione cell */
