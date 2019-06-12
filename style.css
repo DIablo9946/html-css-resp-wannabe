@@ -156,6 +156,14 @@ img{
       display: none;
     }
 
+    #why .third {
+      /* float: left; */
+      clear: both;
+    }
+
+#why p {
+  margin: 0 10px;
+}
   }
 
 
@@ -204,10 +212,13 @@ img{
     width: 100%;
   }
 
-  #why .third {
-    margin-top: 50px;
-  }
+
 }
 
 /* Chiedere come fare in maniera si che solo il testo diminuisca nella versione cell */
- /* #why .row > .third chiedere come mai non funzioni margin top in questo caso */
+ /* #why .row > .third chiedere come mai non funzioni margin top in questo caso
+ Siccome per qualche ragione .third si fondeva con altri div .first .second bisognava
+ darli un float:left oppure clear:both per dividerlo dagli altri due */
+ /* Un'altra nota è che c'è una cosa che si chiama la cascata degli margini dove quando si fa  */
+   /* margin top e margib bottom in due div sotto e sopra considera solo quello maggiore */
+ }
